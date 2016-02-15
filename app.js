@@ -14,26 +14,32 @@
 //   alert('Please give a yes or no answer.');
 // }
 
-
 function sum(decade, century){
+  console.log('The sum of 10 and 100 is 110');
   return decade + century;
-  // console.log('The sum of 10 and 100 is 110');
 
 }
 
-
-function multiply(sun, moon){
-  return sun * moon;
-//   console.log('The product of 5 and 5 is 25');
+function multiply(cloud, moon){
+  console.log('The product of ' + cloud + moon + ' is ' + multiply);
+  return cloud * moon;
 }
-
 
 function sumAndMultiply(decade, century, moon){
   var time = decade + century + moon;
   var space = decade * century * moon;
   var earth = [time, space];
-  return earth;
   // console.log('10 and 100 and 5 sum to 115');
   // console.log('The numbers 10 and 100 and 5 have a product of 5000');
-
+  return earth;
 }
+
+function sumArray(thisArray){
+  var arraySum = 0;
+  for (i = 0; i < thisArray.length; i++) {
+    arraySum += thisArray[i]
+  }
+  console.table(thisArray);
+  console.log(thisArray.toString() + 'was passed in as an array of numbers, and 9 is their sum');
+  return arraySum;
+};
