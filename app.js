@@ -16,5 +16,12 @@
 
 
 function sum(decade, century){
+  return decade + century;
   console.log('The sum of 10 and 100 is 110');
+
+}
+
+function multiply(sun, moon){
+  return sun * moon;
+  console.log('The product of 5 and 5 is 25');
 }
